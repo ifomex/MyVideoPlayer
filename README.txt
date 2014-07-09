@@ -6,4 +6,4 @@ Datum: 28.4.2013
 
 O Aplikaci
 ----------
-Aplikace MyVideoPlayer je jednoduchý video přehrávač pro platformu Android. Umožňuje přehrávat základní formáty videí (mp4, 3gp,...). Aplikace také umožňuje vytvářet libovolné playlisty.
+Aplikace MyVideoPlayer je jednoduchý video přehrávač pro platformu Android. Umožňuje přehrávat základní formáty videí (mp4, 3gp,...). Aplikace také umožňuje vytvářet libovolné playlisty, které ukládá do vlastní databáze. 
