@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FullscreenTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black_overlay"
+    tools:context=".PlaybackActivity" >
+
+    <!-- android:foregroundGravity="center"
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+ 
+    <VideoView
+        android:id="@+id/videoView1"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+        
+
+        <LinearLayout
+            android:id="@+id/video_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <SeekBar
+                android:id="@+id/progress"
+                style="android:ProgressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:progress="0" />
+
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FullscreenActionBarStyle"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/repeat_button"
+                    style="@android:style/MediaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.99"
+                    android:src="@drawable/apollo_holo_light_repeat_normal" />
+
+                <ImageButton
+                    android:id="@+id/prev_button"
+                    style="@android:style/MediaButton.Previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.99"
+                    android:src="@drawable/apollo_holo_light_previous" />
+
+	            <ImageButton
+	                android:id="@+id/playpause_button"
+	                style="@android:style/MediaButton.Pause"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.99"
+	                android:src="@drawable/apollo_holo_light_pause" />
+	
+	            <ImageButton
+	                android:id="@+id/next_button"
+	                style="@android:style/MediaButton.Next"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="0.99"
+	                android:src="@drawable/apollo_holo_light_next" />
+	
+	            <ImageButton
+	                android:id="@+id/shuffle_button"
+	                style="@android:style/MediaButton"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:src="@drawable/apollo_holo_light_shuffle_normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</FrameLayout>

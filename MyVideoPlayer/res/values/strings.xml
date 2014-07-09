@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyVideoPlayer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_playback">PlaybackActivity</string>
+    <string name="play_button">Play</string>
+    <string name="pause_button">Pause</string>
+    <string name="prev_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_video_list">Všechna videa</string>
+    <string name="title_activity_playlists_list">Playlisty</string>
+    <string name="title_activity_items_playlist">ItemsPlaylistActivity</string>
+
+</resources>

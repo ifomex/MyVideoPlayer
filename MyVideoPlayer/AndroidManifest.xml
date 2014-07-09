@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pb.example.myvideoplayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+
+        <!-- android:theme="@style/AppTheme" -->
+        <activity
+            android:name="pb.example.myvideoplayer.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pb.example.myvideoplayer.PlaybackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_playback"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content" android:mimeType="video" android:host="media"/>
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="pb.example.myvideoplayer.VideoListActivity"
+            android:label="@string/title_activity_video_list" >
+        </activity>
+        <activity
+            android:name="pb.example.myvideoplayer.PlaylistsListActivity"
+            android:label="@string/title_activity_playlists_list" >
+        </activity>
+        <activity
+            android:name="pb.example.myvideoplayer.ItemsPlaylistActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:label="@string/title_activity_items_playlist" >
+        </activity>
+    </application>
+
+</manifest>
